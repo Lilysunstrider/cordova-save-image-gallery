@@ -30,6 +30,10 @@
         <param name="onload" value="true"/>
       </feature>
     </config-file>
+    
+    <config-file target="*-Info.plist" parent="NSPhotoLibraryAddUsageDescription">
+      <string>Save images into gallery</string>
+    </config-file>
 
     <header-file src="src/ios/SaveImageGallery.h"/>
   </platform>
@@ -47,10 +51,6 @@
       <feature name="SaveImageGallery">
         <param name="android-package" value="com.agomezmoron.saveImageGallery.SaveImageGallery"/>
       </feature>
-    </config-file>
-    
-    <config-file target="*-Info.plist" parent="NSPhotoLibraryAddUsageDescription">
-      <string>Save images into gallery</string>
     </config-file>
   </platform>
 
